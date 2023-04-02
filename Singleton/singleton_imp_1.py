@@ -13,3 +13,12 @@ if __name__ == '__main__':
     obj2 = Singleton()
     print(f'obj2 val = {obj2.val}')
     print(f'obj1 is obj2 ? = {obj1 is obj2}')
+
+    ''' 
+    output 
+    ------------------------
+    creating 1st instance....
+    obj1 val = 200
+    obj2 val = 200
+    obj1 is obj2 ? = True
+    '''
