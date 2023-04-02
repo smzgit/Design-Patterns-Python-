@@ -80,7 +80,7 @@ class NonVegBurgerMaker(BurgerFactory):
 
 
 if __name__ == '__main__':
-    all_burgers = dict(veg=VegBurgerMaker(),cheeseveg=VegCheeseBurgerMaker(),nonveg=NonVegBurgerMaker)
+    all_burgers = dict(veg=VegBurgerMaker(),cheeseveg=VegCheeseBurgerMaker(),nonveg=NonVegBurgerMaker())
     while True:
         type = input("enter  the type of burger you want - \n1. veg\n2. cheeseveg\n3. nonveg\n4. exit\n> ")
         if type=='exit':
@@ -93,4 +93,33 @@ if __name__ == '__main__':
             burger.ingredients()
         else:
             print('wrong input value, renter again..\n')
+
+    """
+    output
+    ------------------------------
+        enter  the type of burger you want - 
+        1. veg
+        2. cheeseveg
+        3. nonveg
+        4. exit
+        > veg
+        Im a  simple veg burger
+        Veg burger price = Rs. 80
+        Ingredients = 2 buns, 1 mixed veg pattie, 2 tomato slices, 2 cucumber slices, mayo, ketchup
+        enter  the type of burger you want - 
+        1. veg
+        2. cheeseveg
+        3. nonveg
+        4. exit
+        > nonveg
+        Im a  Non veg burger
+        Non veg burger price = Rs. 150
+        Ingredients = 2 buns, 1 chicken pattie,2 Cheese slices, 2 tomato slices, 2 cucumber slices, mayo, ketchup & mustard sauce
+        enter  the type of burger you want - 
+        1. veg
+        2. cheeseveg
+        3. nonveg
+        4. exit
+        > exit
+    """
             
